@@ -16,12 +16,12 @@ The Minimum Viable Product must be completed in three hours.
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
+- [x] Create a forked copy of this project.
 - [ ] Add your _Team Lead_ as collaborator on Github.
-- [ ] Clone your forked version of the Repository.
-- [ ] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
-- [ ] Implement the project on this Branch, committing changes regularly.
-- [ ] Push commits: git push origin `firstName-lastName`.
+- [x] Clone your forked version of the Repository.
+- [x] Create a new Branch on the clone: git checkout -b `firstName-lastName`.
+- [x] Implement the project on this Branch, committing changes regularly.
+- [x] Push commits: git push origin `firstName-lastName`.
 
 Follow these steps for completing your project.
 
@@ -38,13 +38,23 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
-- [ ] What is the purpose of using _sessions_?
+- [x] What is the purpose of using _sessions_?
 
-- [ ] What does bcrypt do to help us store passwords in a secure manner.
+<!-- The purpose of using sessions is to store information about the client on the server so it can be used for a variety of things. In this case, we use it to persist authentication information so there is no need for the client to re-enter credentials on every request the client makes to the server. -->
 
-- [ ] What does bcrypt do to slow down attackers?
+- [x] What does bcrypt do to help us store passwords in a secure manner.
 
-- [ ] What are the three parts of the JSON Web Token?
+<!-- Bcrypt can hash the password before it's saved so the user can be the only one who knows the password. We can then verify the user by matching the stored hash of the password with the password he/she enters upon logging in. -->
+
+- [x] What does bcrypt do to slow down attackers?
+
+<!-- Bcrypt hashes information a designated number of times so the attacker needs the hash, the algorithm, and the number of times/rounds were used to generate the hash in the first place. In short, bcrypt adds the factor of time to security, so an attacker must orders of magnitude more time depending on how many rounds were used to has the information in question. -->
+
+- [x] What are the three parts of the JSON Web Token?
+
+<!-- The three parts of the JSON Web Token are the header, the payload, and the signature. -->
+
+<!--  -->
 
 ## Minimum Viable Product
 
